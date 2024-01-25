@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './paige.component.html',
-  styleUrl: './paige.component.scss'
+  styleUrl: './paige.component.sass'
 })
 export class PaigeComponent {
 
