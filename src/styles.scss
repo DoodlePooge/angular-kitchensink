@@ -19,9 +19,8 @@ $bryan-theme: mat.define-light-theme((
  ),
 ));
 
-.main-theme {
-  @include mat.core-theme($main-theme);
-}
+@include mat.all-component-themes($main-theme);
+
 
 .bryan-theme {
   @include mat.core-color($bryan-theme);
