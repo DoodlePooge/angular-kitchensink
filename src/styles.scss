@@ -6,15 +6,18 @@
 
 $main-theme: mat.define-light-theme((
  color: (
-   primary: mat.define-palette($poog-palette),
-   accent: mat.define-palette($navy-palette),
+   primary: mat.define-palette($navy-palette),
+   accent: mat.define-palette($poog-palette),
+ ),
+ typography: mat.define-typography-config(
+  $font-family: "Rubik"
  ),
 ));
 
 $bryan-theme: mat.define-light-theme((
  color: (
-   primary: mat.define-palette($bry-palette),
-   accent: mat.define-palette($navy-palette),
+   primary: mat.define-palette($navy-palette),
+   accent: mat.define-palette($bry-palette),
    warm: mat.define-palette($org-palette)
  ),
 ));
