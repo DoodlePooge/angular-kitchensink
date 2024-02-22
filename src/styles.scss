@@ -1,4 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import './palettes.scss';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@include mat.core();
+
+$main-theme: mat.define-light-theme((
+ color: (
+   primary: mat.define-palette($poog-palette),
+   accent: mat.define-palette($navy-palette),
+ ),
+));
+
+$bryan-theme: mat.define-light-theme((
+ color: (
+   primary: mat.define-palette($bry-palette),
+   accent: mat.define-palette($navy-palette),
+   warm: mat.define-palette($org-palette)
+ ),
+));
+
+.main-theme {
+  @include mat.core-theme($main-theme);
+}
+
+.bryan-theme {
+  @include mat.core-color($bryan-theme);
+}
